@@ -1,0 +1,7 @@
+.principal div p {
+  font-size: 32px;
+  color: red;
+}
+.principal div p:hover {
+  color: blue;
+}/*# sourceMappingURL=aula4.css.map */

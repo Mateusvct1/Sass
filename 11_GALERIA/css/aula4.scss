@@ -1,0 +1,14 @@
+.principal {
+  div {
+    p {
+      font-size: 32px;
+      color: red;
+
+      //Logo abaixo para mudar a cor quando passar o mouse em cima
+      &:hover {
+        color: blue;
+        
+      }
+    }
+  }
+}
