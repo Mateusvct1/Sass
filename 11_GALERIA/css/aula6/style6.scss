@@ -1,0 +1,19 @@
+// o mixin usado para executar uma mesma sequencia de instruções
+@mixin tema($colorBg: blue) {
+    background-color: $colorBg;
+    color: #fff;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.principal1 {
+    @include tema
+}
+
+.principal2 {
+    @include tema($colorBg:red)
+}
+
+.principal3 {
+    @include tema($colorBg:orange)
+}
