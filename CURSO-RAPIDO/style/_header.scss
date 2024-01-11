@@ -1,0 +1,32 @@
+@mixin flexCenter($direction,$bg){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $direction;
+    background: $bg;
+}
+header{
+    @include flexCenter(row,blue);
+    
+    color:black;
+    button {
+        background: $secudaria;
+        &:hover{
+            cursor: pointer;
+            background: yellow;
+
+        }
+        //adiciona o nome "teste" após o texto do botão
+        &::after{
+            content: " teste";
+        }
+    }
+    p{
+        color: black;
+    }
+    h1{
+        color: purple;
+    }
+}
+

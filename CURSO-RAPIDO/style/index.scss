@@ -1,0 +1,14 @@
+
+// importando as estilização das vairaveis e do header
+@import './vairaveis';
+@import './header';
+
+
+
+.contato{
+    // usando o minix para incluir os elementos em coluna e cor de fundo amarelo
+    @include flexCenter(column, yellow);
+    @extend header;// para pegar os mesmo elementos do header
+    
+
+}
